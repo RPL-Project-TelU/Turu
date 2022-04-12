@@ -1,4 +1,5 @@
-//import required classes and packages  
+//import required classes and packages
+package tubes_kelompok.pkg3_apk_go.learnlish;
 import javax.swing.*;  
 import java.awt.*;  
 import java.awt.event.*;  
@@ -54,19 +55,4 @@ class CreateLoginForm extends JFrame implements ActionListener
     }  
 }  
   
-class Form_login  
-{  
-    public static void main(String arg[])  
-    {  
-        try  
-        {    
-            CreateLoginForm form = new CreateLoginForm();  
-            form.setSize(300,100);  
-            form.setVisible(true);    
-        }  
-        catch(Exception e)  
-        {        
-            JOptionPane.showMessageDialog(null, e.getMessage());  
-        }  
-    }  
-}  
+  
