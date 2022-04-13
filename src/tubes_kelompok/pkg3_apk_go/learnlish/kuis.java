@@ -21,18 +21,15 @@ public static void main(String[] args) {
         
         String[] b = new String[6];
         
-         b[0] = "I’m tired. I’m (go) to bed now. ….";
-        b[1] = "going";
-        b[2] = "goes";
-        b[3] = "go";
-        b[4] = "gone";
-        b[5] = "go on";
-        System.out.println("1. " + b[0]);
-        System.out.println("a. " + b[1]);
-        System.out.println("b. " + b[2]);
-        System.out.println("c. " + b[3]);
-        System.out.println("d. " + b[4]);
-        System.out.println("e. " + b[5]);
+        b[0] = "1.I’m tired. I’m (go) to bed now. ….";
+        b[1] = "a.going";
+        b[2] = "b.goes";
+        b[3] = "c.go";
+        b[4] = "d.gone";
+        b[5] = "e.go on";
+        for(int i = 0; i < b.length; i++){
+            System.out.println(b[i]);
+        }
         Scanner a1 = new Scanner(System.in);
         System.out.print("Jawab : ");
         hasil = a1.nextLine();
@@ -84,18 +81,15 @@ public static void main(String[] args) {
 
         }
         System.out.println("");
-        b[0] = "… received law degrees as today. ….";
-        b[1] = "Never so many women have";
-        b[2] = "Never have so many women";
-        b[3] = "The women aren’t ever";
-        b[4] = "Women who have never";
-        b[5] = "Women lmao";
-        System.out.println("2. " + b[0]);
-        System.out.println("a. " + b[1]);
-        System.out.println("b. " + b[2]);
-        System.out.println("c. " + b[3]);
-        System.out.println("d. " + b[4]);
-        System.out.println("e. " + b[5]);
+        b[0] = "1.… received law degrees as today. ….";
+        b[1] = "a.Never so many women have";
+        b[2] = "b.Never have so many women";
+        b[3] = "c.The women aren’t ever";
+        b[4] = "d.Women who have never";
+        b[5] = "e.Women lmao";
+        for(int i = 0; i < b.length; i++){
+            System.out.println(b[i]);
+        }
         Scanner a2 = new Scanner(System.in);
         System.out.print("Jawab : ");
         hasil = a1.nextLine();
@@ -146,18 +140,15 @@ public static void main(String[] args) {
                 break;
         }
         System.out.println("");
-        b[0] = "In the realm of psychological theory Margaret F. Washburn was a dualist _____ that motor phenomena have an essential role in psychology.";
-        b[1] = "who she believed";
-        b[2] = "believed";
-        b[3] = "who believed";
-        b[4] = "who did she believe";
-        b[5] = "Believer";
-        System.out.println("3. " + b[0]);
-        System.out.println("a. " + b[1]);
-        System.out.println("b. " + b[2]);
-        System.out.println("c. " + b[3]);
-        System.out.println("d. " + b[4]);
-        System.out.println("e. " + b[5]);
+        b[0] = "3.In the realm of psychological theory Margaret F. Washburn was a dualist _____ that motor phenomena have an essential role in psychology.";
+        b[1] = "a.who she believed";
+        b[2] = "b.believed";
+        b[3] = "c.who believed";
+        b[4] = "d.who did she believe";
+        b[5] = "e.Believer";
+        for(int i = 0; i < b.length; i++){
+            System.out.println(b[i]);
+        }
         Scanner a3 = new Scanner(System.in);
         System.out.print("Jawab : ");
         hasil = a1.nextLine();
@@ -208,18 +199,15 @@ public static void main(String[] args) {
                 break;
         }
         System.out.println("");
-        b[0] = "Lisa is (stand) between Rina and Anne";
-        b[1] = "stand up";
-        b[2] = "stands";
-        b[3] = "sitting";
-        b[4] = "standing";
-        b[5] = "Semua jawaban benar";
-        System.out.println("4. " + b[0]);
-        System.out.println("a. " + b[1]);
-        System.out.println("b. " + b[2]);
-        System.out.println("c. " + b[3]);
-        System.out.println("d. " + b[4]);
-        System.out.println("e. " + b[5]);
+        b[0] = "4.Lisa is (stand) between Rina and Anne";
+        b[1] = "a.stand up";
+        b[2] = "b.stands";
+        b[3] = "c.sitting";
+        b[4] = "d.standing";
+        b[5] = "e.Semua jawaban benar";
+        for(int i = 0; i < b.length; i++){
+            System.out.println(b[i]);
+        }
         Scanner a4 = new Scanner(System.in);
         System.out.print("Jawab : ");
         hasil = a1.nextLine();
@@ -270,18 +258,15 @@ public static void main(String[] args) {
                 break;
         }
         System.out.println("");
-        b[0] = "We can go out now. It...(not rain) any more.";
-        b[1] = "was rain";
-        b[2] = "raining";
-        b[3] = "will be rain";
-        b[4] = "wasn’t rain";
-        b[5] = "isn’t raining";
-        System.out.println("5. " + b[0]);
-        System.out.println("a. " + b[1]);
-        System.out.println("b. " + b[2]);
-        System.out.println("c. " + b[3]);
-        System.out.println("d. " + b[4]);
-        System.out.println("e. " + b[5]);
+        b[0] = "5.We can go out now. It...(not rain) any more.";
+        b[1] = "a.was rain";
+        b[2] = "b.raining";
+        b[3] = "c.will be rain";
+        b[4] = "d.wasn’t rain";
+        b[5] = "e.isn’t raining";
+        for(int i = 0; i < b.length; i++){
+            System.out.println(b[i]);
+        }
         Scanner a5 = new Scanner(System.in);
         System.out.print("Jawab : ");
         hasil = a1.nextLine();
