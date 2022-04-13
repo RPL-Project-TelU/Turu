@@ -1,3 +1,4 @@
+//kuis
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -10,7 +11,7 @@ import java.util.Scanner;
  * @author Dewa
  */
 public class kuis {
-public static void main(String[] args) {
+kuis() {
         
         System.out.println("               KERJAKAN SOAL-SOAL DIBAWAH INI DENGAN BENAR");
         System.out.println("                              SOAL BAHASA INGGRIS");
@@ -140,7 +141,7 @@ public static void main(String[] args) {
                 break;
         }
         System.out.println("");
-        b[0] = "3.In the realm of psychological theory Margaret F. Washburn was a dualist _____ that motor phenomena have an essential role in psychology.";
+        b[0] = "3.In the realm of psychological theory Margaret F. Washburn was a dualist ___ that motor phenomena have an essential role in psychology.";
         b[1] = "a.who she believed";
         b[2] = "b.believed";
         b[3] = "c.who believed";
@@ -326,15 +327,20 @@ public static void main(String[] args) {
         String nG;
         
          if (totbenar *2 >= 10){
-           nG = "A";
+           nG = "100";
+           int ng = Integer.parseInt(nG);
        } else if (totbenar * 2>= 8){
-           nG = "B";
+           nG = "80";
+           int ng = Integer.parseInt(nG);
        } else if (totbenar * 2>= 6){
-           nG = "C";
+           nG = "50";
+           int ng = Integer.parseInt(nG);
        } else if (totbenar * 2>= 4){
-           nG = "D";
+           nG = "30";
+           int ng = Integer.parseInt(nG);
        } else if (totbenar * 2>= 2){
-           nG = "E";
+           nG = "10";
+           int ng = Integer.parseInt(nG);
        } else {
            nG = "input salah";
        } 
@@ -344,5 +350,4 @@ public static void main(String[] args) {
            System.out.println("Nilai huruf :" + nG);
        }
     
-    }}    
-
+    }}

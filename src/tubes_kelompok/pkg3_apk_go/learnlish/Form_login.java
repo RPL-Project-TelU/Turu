@@ -15,7 +15,7 @@ class CreateLoginForm extends JFrame implements ActionListener
         
     CreateLoginForm()  
     {     
-             
+        setLocationRelativeTo(null);     
         userLabel = new JLabel();  
         userLabel.setText("Username");        
         textField1 = new JTextField(15);      
@@ -41,18 +41,17 @@ class CreateLoginForm extends JFrame implements ActionListener
             
         if (userValue.equals("admin") && passValue.equals("admin")) {    
               
-            NewPage page = new NewPage();  
+            NewPage page = new NewPage();
               
             page.setVisible(true);  
               
             JLabel wel_label = new JLabel("Welcome: "+userValue);  
-            page.getContentPane().add(wel_label);  
+            page.getContentPane().add(wel_label);
+            this.dispose();
         }  
         else{  
               
             System.out.println("Please enter valid username and password");  
         }  
     }  
-}  
-  
-  
+}
