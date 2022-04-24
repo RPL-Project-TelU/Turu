@@ -16,7 +16,7 @@ class NewPage extends JFrame implements ActionListener
         setTitle("Welcome");  
         setSize(400, 200);  
         JButton b1 = new JButton("MULAI QUIZ"); 
-        JPanel newPanel = new JPanel(new GridLayout(0, 1));
+        JPanel newPanel = new JPanel(new GridLayout(3, 1));
         newPanel.add(b1);             
         add(newPanel, BorderLayout.CENTER);  
         b1.addActionListener(this);
