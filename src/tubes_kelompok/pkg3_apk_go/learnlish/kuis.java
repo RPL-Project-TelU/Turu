@@ -5,6 +5,8 @@
  * and open the template in the editor.
  */
 package tubes_kelompok.pkg3_apk_go.learnlish;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 /**
  *
@@ -12,8 +14,25 @@ import java.util.Scanner;
  */
 public class kuis {
 kuis() {
-        
-        System.out.println("               KERJAKAN SOAL-SOAL DIBAWAH INI DENGAN BENAR");
+ 
+        int hasil = 0;
+        Scanner input = new Scanner(System.in);
+        ArrayList<Soal> listSoal = kuisJSon.ambilKuisJSON("kuisjson.json");
+        for(Soal e:listSoal){
+            System.out.print(e.getNoSoal());
+            System.out.println(". " + e.getSoal());
+            List<String> pilihan = e.getPilihan();
+            for(int i = 0; i<pilihan.size(); i++){
+                System.out.println(pilihan.get(i));
+            }
+            System.out.print("Jawab : ");
+            String jawaban = input.nextLine();
+            if(jawaban.equals(e.getBenar())){
+                hasil++;
+            }
+        }
+        System.out.println("Nilai: " + hasil*20);
+        /*System.out.println("               KERJAKAN SOAL-SOAL DIBAWAH INI DENGAN BENAR");
         System.out.println("                              SOAL BAHASA INGGRIS");
         
         String hasil, JwBn = "Jawaban Anda Benar", JwSl = "Jawaban Anda Salah";
@@ -347,7 +366,8 @@ kuis() {
        if (nG == "input salah"){
            System.out.println(nG);
        } else {
-           System.out.println("Nilai huruf :" + nG);
+           System.out.println("Nilai total :" + nG);
        }
-    
-    }}
+    */
+    }
+}
