@@ -1,5 +1,9 @@
+
 //import required classes and packages
 package tubes_kelompok.pkg3_apk_go.learnlish;
+
+//import required classes and packages  
+
 import javax.swing.*;  
 import java.awt.*;  
 import java.awt.event.*;  
@@ -15,7 +19,11 @@ class CreateLoginForm extends JFrame implements ActionListener
         
     CreateLoginForm()  
     {     
+
         setLocationRelativeTo(null);     
+
+             
+
         userLabel = new JLabel();  
         userLabel.setText("Username");        
         textField1 = new JTextField(15);      
@@ -41,17 +49,43 @@ class CreateLoginForm extends JFrame implements ActionListener
             
         if (userValue.equals("admin") && passValue.equals("admin")) {    
               
+
             NewPage page = new NewPage();
+
+
               
             page.setVisible(true);  
               
             JLabel wel_label = new JLabel("Welcome: "+userValue);  
-            page.getContentPane().add(wel_label);
+
             this.dispose();
+
+            page.getContentPane().add(wel_label);  
+
         }  
         else{  
               
             System.out.println("Please enter valid username and password");  
         }  
     }  
+
 }
+
+  
+class Form_login  
+{  
+    public static void main(String arg[])  
+    {  
+        try  
+        {    
+            CreateLoginForm form = new CreateLoginForm();  
+            form.setSize(300,100);  
+            form.setVisible(true);    
+        }  
+        catch(Exception e)  
+        {        
+            JOptionPane.showMessageDialog(null, e.getMessage());  
+        }  
+    }  
+}  
+

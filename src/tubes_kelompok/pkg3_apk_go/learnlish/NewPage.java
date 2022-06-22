@@ -1,3 +1,4 @@
+
 //import required classes and packages 
 package tubes_kelompok.pkg3_apk_go.learnlish;
 import javax.swing.*;  
@@ -7,10 +8,15 @@ import java.awt.event.ActionListener;
   
 //create NewPage class to create a new page on which user will navigate  
 class NewPage extends JFrame implements ActionListener  
+
+//import required classes and packages  
+
+
 {  
     //constructor  
     NewPage()  
     {  
+
         setLocationRelativeTo(null);
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);  
         setTitle("Welcome");  
@@ -27,3 +33,8 @@ class NewPage extends JFrame implements ActionListener
         kuis quiz = new kuis();
     }
 }
+
+
+      
+ 
+

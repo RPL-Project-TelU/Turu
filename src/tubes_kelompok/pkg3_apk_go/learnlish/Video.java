@@ -203,3 +203,7 @@ public class Video extends Application{
 
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> f17777728a01991ba9df00567b8e45d90f737943
