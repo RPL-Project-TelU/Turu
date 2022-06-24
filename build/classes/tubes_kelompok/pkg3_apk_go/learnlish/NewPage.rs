@@ -1,3 +1,0 @@
-LoginFormDemo
-NewPage
-CreateLoginForm
