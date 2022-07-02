@@ -1,1 +1,1 @@
-get http://locahost:8080/api/signup
+get http://locahost:8080/api/signup/2

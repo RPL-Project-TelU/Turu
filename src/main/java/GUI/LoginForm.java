@@ -97,13 +97,12 @@ public class LoginForm extends JFrame {
     private User getAuthenticatedUser(String username, String password) {
         User user = null;
 
-        final String DB_URL = "jdbc:mysql://localhost/login?serverTimezone=UTC";
+        final String DB_URL = "jdbc:mysql://localhost:3306/login?useSSL=false&serverTimezone=UTC";
         final String USERNAME = "root";
-        final String PASSWORD = "";
+        final String PASSWORD = "root";
 
         try{
             Connection conn = DriverManager.getConnection(DB_URL, USERNAME, PASSWORD);
-            // Connected to database successfully...
 
             String sql = "SELECT * FROM login WHERE username=? AND password=?";
             PreparedStatement preparedStatement = conn.prepareStatement(sql);

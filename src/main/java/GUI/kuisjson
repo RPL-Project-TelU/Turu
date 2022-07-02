@@ -1,0 +1,72 @@
+[
+	{
+		"soal": {
+			"noSoal": "1",
+			"soal": "I’m tired. I’m (go) to bed now. ….",
+			"pilihan": [
+				"a.going",
+				"b.goes",
+				"c.go",
+				"d.gone",
+				"e.go on"
+			],
+			"benar": "a"
+		}
+	},
+	{
+		"soal": {
+			"noSoal": "2",
+			"soal": "1.… received law degrees as today. ….",
+			"pilihan": [
+				"a.Never so many women have",
+				"b.Never have so many women",
+				"c.The women aren’t ever",
+				"d.Women who have never",
+				"e.Women lmao"
+			],
+			"benar": "b"
+		}
+	},
+	{
+		"soal": {
+			"noSoal": "3",
+			"soal": "In the realm of psychological theory Margaret F. Washburn was a dualist ___ that motor phenomena have an essential role in psychology.",
+			"pilihan": [
+				"a.who she believed",
+				"b.believed",
+				"c.who believed",
+				"d.who did she believe",
+				"e.Believer"
+			],
+			"benar": "c"
+		}
+	},
+	{
+		"soal": {
+			"noSoal": "4",
+			"soal": "Lisa is (stand) between Rina and Anne",
+			"pilihan": [
+				"a.stand up",
+				"b.stands",
+				"c.sitting",
+				".standing",
+				"e.Semua jawaban benar"
+			],
+			"benar": "d"
+		}
+	},
+	{
+		"soal": {
+			"noSoal": "5",
+			"soal": "We can go out now. It...(not rain) any more.",
+			"pilihan": [
+				"a.was rain",
+				"b.raining",
+				"c.will be rain",
+				"d.wasn’t rain",
+				"e.isn’t raining"
+			],
+			"benar": "e"
+		}
+	}
+]
