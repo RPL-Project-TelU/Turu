@@ -11,13 +11,12 @@ public class MainFrame extends JFrame {
         infoPanel.setBorder(BorderFactory.createEmptyBorder(30, 50, 30, 50));
         infoPanel.add(new JLabel("Name"));
         infoPanel.add(new JLabel(user.username));
-        //infoPanel.add(new JLabel("Email"));
-        //infoPanel.add(new JLabel(user.email));
-        //infoPanel.add(new JLabel("Phone"));
-        //infoPanel.add(new JLabel(user.phone));
-        //infoPanel.add(new JLabel("Address"));
-        //infoPanel.add(new JLabel(user.address));
-
+        // infoPanel.add(new JLabel("Email"));
+        // infoPanel.add(new JLabel(user.email));
+        // infoPanel.add(new JLabel("Phone"));
+        // infoPanel.add(new JLabel(user.phone));
+        // infoPanel.add(new JLabel("Address"));
+        // infoPanel.add(new JLabel(user.address));
 
         Component[] labels = infoPanel.getComponents();
         for (int i = 0; i < labels.length; i++) {
@@ -25,8 +24,6 @@ public class MainFrame extends JFrame {
         }
 
         add(infoPanel, BorderLayout.NORTH);
-
-
 
         setTitle("Dashboard");
         setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
