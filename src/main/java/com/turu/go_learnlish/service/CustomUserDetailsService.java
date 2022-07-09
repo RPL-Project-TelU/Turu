@@ -8,12 +8,12 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import com.turu.go_learnlish.CustomUserDetails;
 import com.turu.go_learnlish.entity.User;
 import com.turu.go_learnlish.repository.UserRepository;
- 
+
 public class CustomUserDetailsService implements UserDetailsService {
- 
+
     @Autowired
     private UserRepository userRepo;
-     
+
     @Override
     public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {
         User user = userRepo.findByEmail(email);
@@ -22,5 +22,5 @@ public class CustomUserDetailsService implements UserDetailsService {
         }
         return new CustomUserDetails(user);
     }
- 
+
 }

@@ -14,7 +14,7 @@ public class LoginForm extends JFrame {
     JTextField tfusername;
     JPasswordField pfPassword;
 
-    public void initialize(){
+    public void initialize() {
         /******************* Form Panel **********************/
         JLabel lbLoginForm = new JLabel("Login Form", SwingConstants.CENTER);
         lbLoginForm.setFont(mainFont);
@@ -27,7 +27,7 @@ public class LoginForm extends JFrame {
 
         JLabel lbPassword = new JLabel("Password");
         lbPassword.setFont(mainFont);
-        
+
         pfPassword = new JPasswordField();
         pfPassword.setFont(mainFont);
 
@@ -38,7 +38,7 @@ public class LoginForm extends JFrame {
         formpanel.add(tfusername);
         formpanel.add(lbPassword);
         formpanel.add(pfPassword);
-        /*buttons */
+        /* buttons */
         JButton btnlogin = new JButton("Login");
         btnlogin.setFont(mainFont);
         btnlogin.addActionListener(new ActionListener() {
@@ -47,21 +47,20 @@ public class LoginForm extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 String username = tfusername.getText();
                 String password = String.valueOf(pfPassword.getPassword());
-                
+
                 User user = getAuthenticatedUser(username, password);
 
                 if (user != null) {
                     MainFrame mainframe = new MainFrame();
                     mainframe.initialize(user);
                     dispose();
-                }
-                else {
+                } else {
                     JOptionPane.showMessageDialog(LoginForm.this,
-                    "Username atau password invalid",
-                    "coba lagi", JOptionPane.ERROR_MESSAGE);                    
+                            "Username atau password invalid",
+                            "coba lagi", JOptionPane.ERROR_MESSAGE);
                 }
             }
-            
+
         });
 
         JButton btncancel = new JButton("Cancel");
@@ -80,17 +79,18 @@ public class LoginForm extends JFrame {
         buttonsPanel.add(btnlogin);
         buttonsPanel.add(btncancel);
 
-
-        /*frame */
+        /* frame */
         add(formpanel, BorderLayout.NORTH);
         add(buttonsPanel, BorderLayout.SOUTH);
 
         setTitle("Login Form");
         setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
         setSize(400, 500);
-        setMinimumSize(new Dimension(350, 400));;
-        //setResizable(flase);
-        setLocationRelativeTo(null);;
+        setMinimumSize(new Dimension(350, 400));
+        ;
+        // setResizable(flase);
+        setLocationRelativeTo(null);
+        ;
         setVisible(true);
     }
 
@@ -101,7 +101,7 @@ public class LoginForm extends JFrame {
         final String USERNAME = "root";
         final String PASSWORD = "";
 
-        try{
+        try {
             Connection conn = DriverManager.getConnection(DB_URL, USERNAME, PASSWORD);
             // Connected to database successfully...
 
@@ -121,20 +121,18 @@ public class LoginForm extends JFrame {
             preparedStatement.close();
             conn.close();
 
-        }catch(Exception e){
+        } catch (Exception e) {
             System.out.println("Database connection failed!");
         }
-
 
         return user;
     }
 
-
     public static void main(String[] args) {
         try {
-            UIManager.setLookAndFeel( new FlatDarculaLaf() );
-        } catch( Exception ex ) {
-            System.err.println( "Failed to initialize LaF" );
+            UIManager.setLookAndFeel(new FlatDarculaLaf());
+        } catch (Exception ex) {
+            System.err.println("Failed to initialize LaF");
         }
 
         LoginForm loginForm = new LoginForm();

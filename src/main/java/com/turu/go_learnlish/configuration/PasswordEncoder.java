@@ -3,7 +3,7 @@ package com.turu.go_learnlish.configuration;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 public class PasswordEncoder {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
         String rawPassword = "dewa19";
         String encodedPassword = encoder.encode(rawPassword);
